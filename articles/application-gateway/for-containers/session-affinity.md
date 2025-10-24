@@ -20,7 +20,7 @@ With session affinity, Application Gateway for Containers presents a cookie in t
 
 The following steps are depicted in the previous diagram:
 
-1. A client initiates a request to an Application Gateway for Containers' (Application Gateway for Containers) frontend.
+1. A client initiates a request to an Application Gateway for Containers' frontend.
 2. Application Gateway for Containers selects one of the many available pods to load balance the request to. In this example, we assume Pod C is selected out of the four available pods.
 3. Pod C returns a response to Application Gateway for Containers.
 4. In addition to the backend response from Pod C, Application Gateway for Containers adds a Set-Cookie header containing a uniquely generated hash used for routing.
